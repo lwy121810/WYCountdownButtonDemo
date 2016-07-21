@@ -28,7 +28,4 @@ typedef void(^TouchUpButtonBlock)(WYCountdownButton *countDownItem , NSInteger t
 - (void)startCountdown;
 /**结束倒计时**/
 - (void)stopCountDown;
-
-/**重置*/
-- (void)resetCountDown;
 @end

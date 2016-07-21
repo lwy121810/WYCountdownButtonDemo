@@ -93,12 +93,5 @@
         self.itemBlock(sender ,sender.tag);
     }
 }
-/**重置*/
-- (void)resetCountDown
-{
-//    [_timer respondsToSelector:@selector(startCountdown:)];
-//    [self stopCountDown];
-//    [self startCountdown];
-}
 
 @end
