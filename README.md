@@ -1,8 +1,7 @@
 # WYCountdownButtonDemo
 一个封装的获取验证码倒计时的button
-##示例
-/**初始化*/
-    //使用这种初始化的时候要注意类型为UIButtonTypeCustom
+#### 示例
+  //使用这种初始化的时候要注意类型为UIButtonTypeCustom
     //WYCountdownButton *countdownButton = [WYCountdownButton buttonWithType:UIButtonTypeCustom];
     WYCountdownButton *countdownButton = [WYCountdownButton countDown];
     countdownButton.frame = CGRectMake(80, 80, 100, 35);
@@ -17,3 +16,4 @@
         /**开始计时*/
         [countdownButton startCountdown];
     }];
+  
