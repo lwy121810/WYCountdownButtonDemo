@@ -21,8 +21,8 @@
 + (instancetype)countDown
 {
     WYCountdownButton *button = [WYCountdownButton buttonWithType:UIButtonTypeCustom];
-    button.totalSeconds = 10;
     button.titleColor_normal = [UIColor lightGrayColor];
+    button.totalSeconds = 10;//默认时间
     return button;
 }
 #pragma mark - private

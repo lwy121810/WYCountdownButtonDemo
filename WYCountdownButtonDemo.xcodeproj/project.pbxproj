@@ -16,6 +16,7 @@
 		945225791D40EBAE001B7EC3 /* WYCountdownButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225781D40EBAE001B7EC3 /* WYCountdownButtonDemoTests.m */; };
 		945225841D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225831D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m */; };
 		945225941D40EBF5001B7EC3 /* WYCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225931D40EBF5001B7EC3 /* WYCountdownButton.m */; };
+		945225971D410459001B7EC3 /* countDownGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 945225961D410459001B7EC3 /* countDownGIF.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		945225851D40EBAE001B7EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945225921D40EBF5001B7EC3 /* WYCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCountdownButton.h; sourceTree = "<group>"; };
 		945225931D40EBF5001B7EC3 /* WYCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCountdownButton.m; sourceTree = "<group>"; };
+		945225961D410459001B7EC3 /* countDownGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = countDownGIF.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		9452255D1D40EBAE001B7EC3 /* WYCountdownButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				945225951D41044F001B7EC3 /* GIF */,
 				945225911D40EBF5001B7EC3 /* WYCountdownButton */,
 				945225611D40EBAE001B7EC3 /* AppDelegate.h */,
 				945225621D40EBAE001B7EC3 /* AppDelegate.m */,
@@ -151,6 +154,14 @@
 				945225931D40EBF5001B7EC3 /* WYCountdownButton.m */,
 			);
 			path = WYCountdownButton;
+			sourceTree = "<group>";
+		};
+		945225951D41044F001B7EC3 /* GIF */ = {
+			isa = PBXGroup;
+			children = (
+				945225961D410459001B7EC3 /* countDownGIF.gif */,
+			);
+			name = GIF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 				9452256E1D40EBAE001B7EC3 /* LaunchScreen.storyboard in Resources */,
 				9452256B1D40EBAE001B7EC3 /* Assets.xcassets in Resources */,
 				945225691D40EBAE001B7EC3 /* Main.storyboard in Resources */,
+				945225971D410459001B7EC3 /* countDownGIF.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

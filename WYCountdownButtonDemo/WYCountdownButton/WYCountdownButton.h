@@ -18,7 +18,7 @@ typedef void(^TouchUpButtonBlock)(WYCountdownButton *countDownItem , NSInteger t
 @property (nonatomic , copy) NSString *title_end;
 /**button的字体颜色 默认lightGrayColor*/
 @property (nonatomic , strong) UIColor *titleColor_normal;
-/**倒计时的总时间 默认15s**/
+/**倒计时的总时间 默认10s**/
 @property (nonatomic , assign) NSInteger totalSeconds;
 
 + (instancetype)countDown;
