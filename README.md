@@ -6,6 +6,7 @@
     WYCountdownButton *countdownButton = [WYCountdownButton countDown];
     countdownButton.frame = CGRectMake(80, 80, 100, 35);
     countdownButton.backgroundColor = [UIColor redColor];
+    
     /**设置开始时的文字*/
     countdownButton.title_normal = @"获取验证码";
     [self.view addSubview:countdownButton];
