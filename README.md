@@ -17,4 +17,4 @@
     }];
   
   ####效果图
-  ![](https://github.com/lwy121810/WYPlaceholderTextView/tree/master/Gif)
+  ![image](https://github.com/lwy121810/WYPlaceholderTextView/tree/master/Gif)
