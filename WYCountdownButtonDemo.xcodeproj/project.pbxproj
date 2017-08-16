@@ -15,8 +15,8 @@
 		9452256E1D40EBAE001B7EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9452256C1D40EBAE001B7EC3 /* LaunchScreen.storyboard */; };
 		945225791D40EBAE001B7EC3 /* WYCountdownButtonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225781D40EBAE001B7EC3 /* WYCountdownButtonDemoTests.m */; };
 		945225841D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225831D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m */; };
-		945225941D40EBF5001B7EC3 /* WYCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225931D40EBF5001B7EC3 /* WYCountdownButton.m */; };
 		945225971D410459001B7EC3 /* countDownGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 945225961D410459001B7EC3 /* countDownGIF.gif */; };
+		94A7721E1F43F6B8004BE1E0 /* WYCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A7721D1F43F6B8004BE1E0 /* WYCountdownButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		9452257F1D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYCountdownButtonDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		945225831D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYCountdownButtonDemoUITests.m; sourceTree = "<group>"; };
 		945225851D40EBAE001B7EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		945225921D40EBF5001B7EC3 /* WYCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCountdownButton.h; sourceTree = "<group>"; };
-		945225931D40EBF5001B7EC3 /* WYCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCountdownButton.m; sourceTree = "<group>"; };
 		945225961D410459001B7EC3 /* countDownGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = countDownGIF.gif; sourceTree = "<group>"; };
+		94A7721C1F43F6B8004BE1E0 /* WYCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCountdownButton.h; sourceTree = "<group>"; };
+		94A7721D1F43F6B8004BE1E0 /* WYCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCountdownButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,7 @@
 		945225521D40EBAE001B7EC3 = {
 			isa = PBXGroup;
 			children = (
+				94A7721B1F43F6B8004BE1E0 /* WYCountdownButton */,
 				9452255D1D40EBAE001B7EC3 /* WYCountdownButtonDemo */,
 				945225771D40EBAE001B7EC3 /* WYCountdownButtonDemoTests */,
 				945225821D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests */,
@@ -107,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				945225951D41044F001B7EC3 /* GIF */,
-				945225911D40EBF5001B7EC3 /* WYCountdownButton */,
 				945225611D40EBAE001B7EC3 /* AppDelegate.h */,
 				945225621D40EBAE001B7EC3 /* AppDelegate.m */,
 				945225641D40EBAE001B7EC3 /* ViewController.h */,
@@ -147,21 +147,22 @@
 			path = WYCountdownButtonDemoUITests;
 			sourceTree = "<group>";
 		};
-		945225911D40EBF5001B7EC3 /* WYCountdownButton */ = {
-			isa = PBXGroup;
-			children = (
-				945225921D40EBF5001B7EC3 /* WYCountdownButton.h */,
-				945225931D40EBF5001B7EC3 /* WYCountdownButton.m */,
-			);
-			path = WYCountdownButton;
-			sourceTree = "<group>";
-		};
 		945225951D41044F001B7EC3 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
 				945225961D410459001B7EC3 /* countDownGIF.gif */,
 			);
 			name = GIF;
+			sourceTree = "<group>";
+		};
+		94A7721B1F43F6B8004BE1E0 /* WYCountdownButton */ = {
+			isa = PBXGroup;
+			children = (
+				94A7721C1F43F6B8004BE1E0 /* WYCountdownButton.h */,
+				94A7721D1F43F6B8004BE1E0 /* WYCountdownButton.m */,
+			);
+			name = WYCountdownButton;
+			path = WYCountdownButtonDemo/WYCountdownButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +299,7 @@
 				945225661D40EBAE001B7EC3 /* ViewController.m in Sources */,
 				945225631D40EBAE001B7EC3 /* AppDelegate.m in Sources */,
 				945225601D40EBAE001B7EC3 /* main.m in Sources */,
-				945225941D40EBF5001B7EC3 /* WYCountdownButton.m in Sources */,
+				94A7721E1F43F6B8004BE1E0 /* WYCountdownButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +525,7 @@
 				9452258A1D40EBAE001B7EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9452258B1D40EBAE001B7EC3 /* Build configuration list for PBXNativeTarget "WYCountdownButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				9452258D1D40EBAE001B7EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9452258E1D40EBAE001B7EC3 /* Build configuration list for PBXNativeTarget "WYCountdownButtonDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +543,7 @@
 				945225901D40EBAE001B7EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
