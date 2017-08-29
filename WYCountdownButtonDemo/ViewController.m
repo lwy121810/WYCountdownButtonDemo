@@ -8,13 +8,19 @@
 
 #import "ViewController.h"
 #import "WYCountdownButton.h"
+#import "TestViewController.h"
 @interface ViewController ()
 {
     WYCountdownButton *_countdownButton;
 }
+
 @end
 
 @implementation ViewController
+- (IBAction)push:(id)sender {
+    TestViewController *vc = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +37,7 @@
     /**设置结束后的文字*/
     countdownButton.title_end = @"重新获取";
     /**点击按钮之后*/
-    [countdownButton didTouchUpCountDownButton:^(WYCountdownButton *countDownItem, NSInteger tag) {
+    [countdownButton didTouchUpCountDownButton:^(WYCountdownButton *countDownItem) {
         /**开始计时*/
         [countdownButton startCountdown];
     }];

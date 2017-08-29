@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		557C88C1C6AD692A4C359CAE /* libPods-WYCountdownButtonDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42251ACEBF9E14CB764EB525 /* libPods-WYCountdownButtonDemo.a */; };
 		945225601D40EBAE001B7EC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9452255F1D40EBAE001B7EC3 /* main.m */; };
 		945225631D40EBAE001B7EC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225621D40EBAE001B7EC3 /* AppDelegate.m */; };
 		945225661D40EBAE001B7EC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225651D40EBAE001B7EC3 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 		945225841D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 945225831D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests.m */; };
 		945225971D410459001B7EC3 /* countDownGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 945225961D410459001B7EC3 /* countDownGIF.gif */; };
 		94A7721E1F43F6B8004BE1E0 /* WYCountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A7721D1F43F6B8004BE1E0 /* WYCountdownButton.m */; };
+		94A772FB1F45822A004BE1E0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A772F91F45822A004BE1E0 /* TestViewController.m */; };
+		94A772FC1F45822A004BE1E0 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94A772FA1F45822A004BE1E0 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42251ACEBF9E14CB764EB525 /* libPods-WYCountdownButtonDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYCountdownButtonDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5308EF246E58F6B52D475420 /* Pods-WYCountdownButtonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYCountdownButtonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYCountdownButtonDemo/Pods-WYCountdownButtonDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9452255B1D40EBAE001B7EC3 /* WYCountdownButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYCountdownButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9452255F1D40EBAE001B7EC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		945225611D40EBAE001B7EC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +61,10 @@
 		945225961D410459001B7EC3 /* countDownGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = countDownGIF.gif; sourceTree = "<group>"; };
 		94A7721C1F43F6B8004BE1E0 /* WYCountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYCountdownButton.h; sourceTree = "<group>"; };
 		94A7721D1F43F6B8004BE1E0 /* WYCountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYCountdownButton.m; sourceTree = "<group>"; };
+		94A772F81F45822A004BE1E0 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		94A772F91F45822A004BE1E0 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		94A772FA1F45822A004BE1E0 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		F3841CB0EBE6CDA00658AA70 /* Pods-WYCountdownButtonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYCountdownButtonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYCountdownButtonDemo/Pods-WYCountdownButtonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557C88C1C6AD692A4C359CAE /* libPods-WYCountdownButtonDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +101,8 @@
 				945225771D40EBAE001B7EC3 /* WYCountdownButtonDemoTests */,
 				945225821D40EBAE001B7EC3 /* WYCountdownButtonDemoUITests */,
 				9452255C1D40EBAE001B7EC3 /* Products */,
+				9786598C25BF31B1865D5D25 /* Pods */,
+				A7DC7D39DC12CF45E5EEF9ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +124,9 @@
 				945225621D40EBAE001B7EC3 /* AppDelegate.m */,
 				945225641D40EBAE001B7EC3 /* ViewController.h */,
 				945225651D40EBAE001B7EC3 /* ViewController.m */,
+				94A772F81F45822A004BE1E0 /* TestViewController.h */,
+				94A772F91F45822A004BE1E0 /* TestViewController.m */,
+				94A772FA1F45822A004BE1E0 /* TestViewController.xib */,
 				945225671D40EBAE001B7EC3 /* Main.storyboard */,
 				9452256A1D40EBAE001B7EC3 /* Assets.xcassets */,
 				9452256C1D40EBAE001B7EC3 /* LaunchScreen.storyboard */,
@@ -165,6 +180,23 @@
 			path = WYCountdownButtonDemo/WYCountdownButton;
 			sourceTree = "<group>";
 		};
+		9786598C25BF31B1865D5D25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3841CB0EBE6CDA00658AA70 /* Pods-WYCountdownButtonDemo.debug.xcconfig */,
+				5308EF246E58F6B52D475420 /* Pods-WYCountdownButtonDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A7DC7D39DC12CF45E5EEF9ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42251ACEBF9E14CB764EB525 /* libPods-WYCountdownButtonDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 945225881D40EBAE001B7EC3 /* Build configuration list for PBXNativeTarget "WYCountdownButtonDemo" */;
 			buildPhases = (
+				EF5013578DE45AF5180424AD /* [CP] Check Pods Manifest.lock */,
 				945225571D40EBAE001B7EC3 /* Sources */,
 				945225581D40EBAE001B7EC3 /* Frameworks */,
 				945225591D40EBAE001B7EC3 /* Resources */,
+				30D7DE766D40CD5682A63D87 /* [CP] Embed Pods Frameworks */,
+				72B2BF0907A082621C74102E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9452256E1D40EBAE001B7EC3 /* LaunchScreen.storyboard in Resources */,
+				94A772FC1F45822A004BE1E0 /* TestViewController.xib in Resources */,
 				9452256B1D40EBAE001B7EC3 /* Assets.xcassets in Resources */,
 				945225691D40EBAE001B7EC3 /* Main.storyboard in Resources */,
 				945225971D410459001B7EC3 /* countDownGIF.gif in Resources */,
@@ -291,6 +327,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30D7DE766D40CD5682A63D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYCountdownButtonDemo/Pods-WYCountdownButtonDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B2BF0907A082621C74102E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WYCountdownButtonDemo/Pods-WYCountdownButtonDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5013578DE45AF5180424AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYCountdownButtonDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		945225571D40EBAE001B7EC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -300,6 +387,7 @@
 				945225631D40EBAE001B7EC3 /* AppDelegate.m in Sources */,
 				945225601D40EBAE001B7EC3 /* main.m in Sources */,
 				94A7721E1F43F6B8004BE1E0 /* WYCountdownButton.m in Sources */,
+				94A772FB1F45822A004BE1E0 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +526,7 @@
 		};
 		945225891D40EBAE001B7EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3841CB0EBE6CDA00658AA70 /* Pods-WYCountdownButtonDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYCountdownButtonDemo/Info.plist;
@@ -449,6 +538,7 @@
 		};
 		9452258A1D40EBAE001B7EC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5308EF246E58F6B52D475420 /* Pods-WYCountdownButtonDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WYCountdownButtonDemo/Info.plist;
