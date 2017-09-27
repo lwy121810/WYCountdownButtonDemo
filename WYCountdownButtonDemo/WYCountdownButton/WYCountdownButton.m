@@ -7,11 +7,9 @@
 //
 
 #import "WYCountdownButton.h"
-
-
+IB_DESIGNABLE
 @interface WYCountdownButton ()
 {
-//    NSTimer *_timer;
     NSInteger _second;
 }
 @property (nonatomic , copy) TouchUpButtonBlock itemBlock;
@@ -51,10 +49,46 @@
  */
 - (void)setupDefaultValue
 {
-    self.titleColor_normal = [UIColor lightGrayColor];
-    self.totalSeconds = 60;//默认时间
-    self.countdownTitleFormatter = @"剩余$秒";
+    if (self.titleNormalColor == nil) {
+        self.titleNormalColor = [UIColor lightGrayColor];
+    }
+    if (self.totalSeconds <= 0) {
+        self.totalSeconds = 60;//默认时间
+    }
+    if ([self stringIsBlank:self.countdownTitleFormatter] || ![self.countdownTitleFormatter containsString:@"$"]) {
+        self.countdownTitleFormatter = @"剩余$秒";
+    }
+    if ([self stringIsBlank:self.title_normal]) {
+        self.title_normal = @"发送验证码";
+    }
+    if ([self stringIsBlank:self.title_end]) {
+        self.title_end = self.title_normal;
+    }
 }
+- (BOOL)stringIsBlank:(NSString *)string
+{
+    // 判断字符串是否为空
+    if (string == nil || string == NULL) {
+        return YES;
+    }
+    
+    if ([string isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
+        // 去掉前后空格，判断length是否为0
+        return YES;
+    }
+    
+    if ([string isEqualToString:@"(null)"] || [string isEqualToString:@"null"] || [string isEqualToString:@"<null>"])
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
 #pragma mark - private
 - (void)startCountdown
 {
@@ -111,22 +145,28 @@
  */
 - (void)setTitle_normal:(NSString *)title_normal
 {
-    _title_normal = title_normal;
     self.title_end = title_normal;
     [self setTitle:title_normal forState:UIControlStateNormal];
+}
+
+- (NSString *)title_normal
+{
+    return [self titleForState:UIControlStateNormal];
 }
 
 /**
  设置字体颜色
 
- @param titleColor_normal 字体颜色
+ @param titleNormalColor 字体颜色
  */
-- (void)setTitleColor_normal:(UIColor *)titleColor_normal
+- (void)setTitleNormalColor:(UIColor *)titleNormalColor
 {
-    _titleColor_normal = titleColor_normal;
-    [self setTitleColor:titleColor_normal forState:UIControlStateNormal];
+     [self setTitleColor:titleNormalColor forState:UIControlStateNormal];
 }
-
+- (UIColor *)titleNormalColor
+{
+    return [self titleColorForState:UIControlStateNormal];
+}
 /**
  结束倒计时
  */
@@ -145,14 +185,8 @@
 }
 - (void)dealloc
 {
-    
-    
     [_timer invalidate];
     _timer = nil;
-//    if (_timer) {
-//        [_timer invalidate];
-//        _timer = nil;
-//    }
 }
 
 /**
@@ -164,7 +198,7 @@
 {
 
     self.itemBlock = itemBlock;
-     [self addTarget:self action:@selector(touched:) forControlEvents:UIControlEventTouchUpInside];
+    [self addTarget:self action:@selector(touched:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**

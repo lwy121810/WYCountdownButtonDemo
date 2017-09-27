@@ -22,7 +22,7 @@
     
     self.countButton.title_normal = @"点击开始倒计时";
     self.countButton.countdownTitleFormatter = @"还剩$秒";
-    self.countButton.titleColor_normal = [UIColor redColor];
+    self.countButton.titleNormalColor = [UIColor redColor];
     __weak typeof(self)weakSelf = self;
     [self.countButton didTouchUpCountDownButton:^(WYCountdownButton *countDownItem) {
         [weakSelf.countButton startCountdown];

@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
  
 
 s.name         = 'WYCountdownButton'
-    s.version      = '1.0.0'
-s.summary      = '倒计时按钮'
+    s.version      = '1.0.1'
+s.summary      = '简单的倒计时按钮封装'
     s.homepage     = 'https://github.com/lwy121810/WYCountdownButtonDemo'
      s.license      = "MIT"
     s.authors      = { 'lwy121810' => '381319898@qq.com' }

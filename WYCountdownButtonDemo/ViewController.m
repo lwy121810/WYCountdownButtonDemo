@@ -21,10 +21,21 @@
     TestViewController *vc = [[TestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+// xib生成的按钮 所有属性均在xib里设置 注意buttontype选择custom
+- (IBAction)clickMe:(WYCountdownButton *)sender {
+    [sender startCountdown];
+    NSLog(@">>>>>>>>>>>> %@ %@", sender.title_normal, sender.title_end);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self setupView];
+}
+- (void)setupView
+{
+    
     /**初始化*/
     //使用这种初始化的时候要注意类型为UIButtonTypeCustom
     //WYCountdownButton *countdownButton = [WYCountdownButton buttonWithType:UIButtonTypeCustom];

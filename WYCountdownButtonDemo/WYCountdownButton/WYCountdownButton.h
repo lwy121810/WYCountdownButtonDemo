@@ -12,16 +12,16 @@ typedef void(^TouchUpButtonBlock)(WYCountdownButton *countDownItem);
 @interface WYCountdownButton : UIButton
 
 @property (nonatomic , assign , readonly) BOOL isCountdowning;
-/** button的标题 （开始时的标题）*/
-@property (nonatomic , copy) NSString *title_normal;
+/** button的标题 （开始时的标题）在故事版中使用的话直接设置normal状态下的标题即可 */
+@property (nonatomic , copy)  NSString *title_normal;
 /** 计时结束后显示的文字的 默认跟title_normal一样 */
-@property (nonatomic , copy) NSString *title_end;
-/** button的字体颜色 默认lightGrayColor */
-@property (nonatomic , strong) UIColor *titleColor_normal;
+@property (nonatomic , copy) IBInspectable NSString *title_end;
+/** button的字体颜色 默认lightGrayColor 在故事版使用的话直接设置按钮的字体颜色即可 */
+@property (nonatomic , strong) UIColor *titleNormalColor;
 /** 倒计时的总时间 默认60s **/
-@property (nonatomic , assign) NSInteger totalSeconds;
+@property (nonatomic , assign) IBInspectable NSInteger totalSeconds;
 /** 倒计时文字显示样式 ‘$’代表秒数 默认‘剩余$秒’ */
-@property (nonatomic , copy) NSString *countdownTitleFormatter;
+@property (nonatomic , copy) IBInspectable NSString *countdownTitleFormatter;
 
 
 /**
